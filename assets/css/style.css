@@ -1,0 +1,205 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+ol,ul{
+    list-style-type: none;
+}
+a{
+    font-size: 14px;
+    text-decoration: none;
+    margin: 0;
+    color: #000;
+    text-transform:capitalize;
+}
+p{
+    font-size: 16px;
+    margin: 0;
+    color: #000;
+}
+img{
+    height: 100px;
+    width: auto;
+}
+
+.section-padding{
+    padding: 30px 0px;
+}
+
+
+
+
+
+
+.text {
+    position: absolute;
+    right: 50%;
+    transform: translate(50%,-50%);
+    text-transform: uppercase;
+    font-family: verdana;
+    font-size: 30px;
+    font-weight: 700;
+    color: #f5f5f5;
+    text-shadow: 1px 1px 1px #919191,
+        1px 2px 1px #a04b4b,
+        1px 3px 1px #919191,
+        1px 4px 1px #919191,
+        1px 5px 1px #919191,
+        1px 6px 1px #919191,
+        1px 7px 1px #2e5ec7,
+        1px 8px 1px #919191,
+        1px 9px 1px #919191,
+        1px 10px 1px #919191,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ====== main area css start here ======= */
+#main-slider{
+    position: relative;
+    height: 600px;
+    width: 100%;
+}
+.slider-item{
+    position: relative;
+    height: 600px;
+    width: 100%;
+}
+slider-image{
+    position: absolute;
+    max-height: 600px;
+    width: 100%;
+    object-fit: cover;
+}
+.slider-image img{
+    height:100% !important;
+    width: 100% !important;
+}
+.slider-text{
+    position: absolute;
+    top: 10%;
+    right: 0;
+}
+/* catagory */
+.catagorybg{
+    background: rgb(241, 197, 197);
+    padding: 10px 0px ;
+}
+.catagory-content{
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    padding-bottom: 15px;
+    position: relative;
+}
+.catagory-image{
+    text-align: center;
+}
+.catagory-image img{
+   padding-top: 30px;
+   padding-left: 60px;
+   padding-right: 60px;
+   padding-bottom: 10px;
+}
+.catagory-title{
+    color: #000;
+    font-size: 18px;
+    padding: 10px 0px;
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev{
+    background: 0 0;
+    color: red;
+    border: none;
+    padding: 0!important;
+    font-size: 40px;
+}
+.owl-carousel .owl-nav button.owl-next{
+    position: absolute;
+    right: -1%;
+    top:30%;
+    background: #000;
+    width: 40px;
+    padding: 0px 20px ;
+}
+.owl-carousel .owl-nav button.owl-prev{
+    position: absolute;
+    left: -1%;
+    top:30%;
+    background: #000;
+    width: 40px;
+    padding: 0px 20px ;
+}
+
+
+/* product  card css start here  */
+.product-card{
+    background: rgb(212, 211, 211);
+    position: relative;
+    border: 1px solid rgb(117, 8, 8);
+    overflow: hidden;
+}
+.product-offer{
+    position: absolute;
+    top: 5px;
+    left:4px;
+    background: green;
+    padding: 5px 3px ;
+    border-radius: 5px;
+}
+.product-offer p{
+    color:#fff
+}
+
+
+.product-info button{
+    border: none;
+    padding:5px 8px;
+}
+.product-info button a{
+    color: #fff;
+    padding:5px 8px;
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        * {
+  height: 100%;
+}
+body {
+  color: #fff;
+  font-size: 16px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  background-image: url(https://i.postimg.cc/XvT12qdD/3.jpg);
+  background-size: cover;
+  background-position: 50% 0;
+  height: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+body:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+section {
+  display: inline-block;
+  vertical-align: middle;
+  padding:  100px;
+  max-width: 500px;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+
+
+
+/* ignore the code below */
+
+
+.link-area
+{
+  position:fixed;
+  bottom:20px;
+  left:20px;  
+  padding:15px;
+  border-radius:40px;
+  background:tomato;
+}
+.link-area a
+{
+  text-decoration:none;
+  color:#fff;
+  font-size:25px;
+}
+    </style>
+</head>
+<body>
+    
+
+
+    <section id="content">
+        <header>
+            <img src="https://www.w3schools.com/css/img_lights.jpg" alt="" height="100px" width="100px" >
+          <h1>Jquery Water Ripple Effect</h1>
+          <h2>A nice Jquery Plugin for your Website</h2>
+        </header>
+      </section>
+      
+
+ 
+      <script src="assets/js/jquery-3.6.0.min.js"></script>
+      <script src="assets/js/custom.js"></script>
+      <script src="assets/js/jquery.ripples-min.js"></script>
+      <script>
+        $(document).ready(function() {
+            try {
+                $('body').ripples({
+                    resolution: 512,
+                    dropRadius: 20, //px
+                    perturbance: 0.04,
+                });
+                $('main').ripples({
+                    resolution: 128,
+                    dropRadius: 10, //px
+                    perturbance: 0.04,
+                    interactive: false
+                });
+            }
+            catch (e) {
+                $('.error').show().text(e);
+            }
+        
+            $('.js-ripples-disable').on('click', function() {
+                $('body, main').ripples('destroy');
+                $(this).hide();
+            });
+        
+            $('.js-ripples-play').on('click', function() {
+                $('body, main').ripples('play');
+            });
+        
+            $('.js-ripples-pause').on('click', function() {
+                $('body, main').ripples('pause');
+            });
+        
+            // Automatic drops
+            setInterval(function() {
+                var $el = $('main');
+                var x = Math.random() * $el.outerWidth();
+                var y = Math.random() * $el.outerHeight();
+                var dropRadius = 20;
+                var strength = 0.04 + Math.random() * 0.04;
+        
+                $el.ripples('drop', x, y, dropRadius, strength);
+            }, 400);
+        });
+        </script>
+</body>>
+</html>
